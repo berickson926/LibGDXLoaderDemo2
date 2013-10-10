@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LibGDXLoaderDemo2/LibGDXLoaderDemo2.iml" filepath="$PROJECT_DIR$/LibGDXLoaderDemo2/LibGDXLoaderDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/LibGDXLoaderDemo2-android.iml" filepath="$PROJECT_DIR$/LibGDXLoaderDemo2-android/LibGDXLoaderDemo2-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibGDXLoaderDemo2-desktop/LibGDXLoaderDemo2-desktop.iml" filepath="$PROJECT_DIR$/LibGDXLoaderDemo2-desktop/LibGDXLoaderDemo2-desktop.iml" />
+    </modules>
+  </component>
+</project>
+
