@@ -5,7 +5,7 @@
               android:layout_height="960dp">
 
     <FrameLayout
-            android:layout_width="540dp"
+            android:layout_width="fill_parent"
             android:layout_height="600dp"
             android:id="@+id/libgdxFrame">
     </FrameLayout>
