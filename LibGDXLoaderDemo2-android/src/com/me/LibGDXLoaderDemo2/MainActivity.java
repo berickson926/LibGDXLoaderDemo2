@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 
 import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -19,6 +20,8 @@ import com.stericson.RootTools.execution.Command;
 import dalvik.system.DexClassLoader;
 
 import java.io.File;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AndroidApplication
 {
@@ -30,8 +33,8 @@ public class MainActivity extends AndroidApplication
     private Context childAppCtx;
 
     //Used to initialize views and objects after reflection
-    private View childView;
-    private ApplicationListener childGame;
+    private View childView1, childView2, splashView;
+    private ApplicationListener childGame1, childGame2, splash;
     private Screen childScreen;
     private FrameLayout libgdxFrame;
 
@@ -44,23 +47,27 @@ public class MainActivity extends AndroidApplication
         cfg = new AndroidApplicationConfiguration();
         cfg.useGL20 = false;
 
-        Log.d("MainActivity", "Initializing splash screen");
-        libgdxFrame = (FrameLayout) findViewById(R.id.libgdxFrame);
-        childGame = new DemoGame();
-        childView = initializeForView(childGame, cfg);
-        libgdxFrame.addView(childView);
+        startSplashScreen();
 
         Log.d("MainActivity", "Downloading Child apk");
         //downloadUpdate("EnplugPlayer.apk", "http://enplug.com/packages/player/40/EnplugPlayer.apk");
         //downloadUpdate("star-assault-android.apk", "http://dl.dropboxusercontent.com/sh/xt7xpa15401ru11/BHawa9XIMC/star-assault-android.apk?token_hash=AAGgjL8F9eDn9LhCbMPBOBeztZeRo-4Un923YFoLrUcEyA&dl=1");
         //downloadUpdate("starAssault.apk", "http://dl-web.dropbox.com/get/personalProjects/starAssault.apk?w=AADGmZDev2JNaI2ZIj9-QqQD-erlT8QYlMha2Cw5q3lUig&dl=1");
 
-        Log.d("MainActivity", "Starting Child app");
+        Log.d("MainActivity", "Starting first Child app");
         startChildApp();
 
-        Log.d("MainActivity", "Start second app");
+        Log.d("MainActivity", "Start second child app");
+        startSecondChildApp();
+    }
 
-        //startSecondChildApp();
+    public void startSplashScreen()
+    {
+        Log.d("MainActivity", "Initializing splash screen");
+        libgdxFrame = (FrameLayout) findViewById(R.id.libgdxFrame);
+        splash = new DemoGame();
+        splashView = initializeForView(splash, cfg);
+        libgdxFrame.addView(splashView);
     }
 
     //we call this method only after the child app has been downloaded/installed
@@ -70,7 +77,7 @@ public class MainActivity extends AndroidApplication
         try
         {
             Log.d("MainActivity", ">>>>>>>>>>Initializing Class Loader");
-            String className = "net.obviam.starassault.screens.GameScreen";
+            String className = "net.obviam.starassault.StarAssault";
             String namespace = "net.obviam.starassault";
             String packageFullPath = "sdcard/Download/starAssault.apk";
             Context currentContext = getApplicationContext();
@@ -88,20 +95,20 @@ public class MainActivity extends AndroidApplication
             Log.d("MainActivity", "Loaded Super Class is: "+loadedClass.getConstructor().newInstance().getClass().getSuperclass().toString());
 
             Log.d("MainActivity", "Instantiating child Game from dynamically loaded class.");
-            childScreen = (Screen) loadedClass.getConstructor().newInstance();
+            childGame1 = (Game) loadedClass.getConstructor().newInstance();
 
-            Log.d("MainActivity", "Starting new screen");
-            ((DemoGame)childGame).changeScreen(childScreen);
+            //Log.d("MainActivity", "Starting new screen");
+            //((DemoGame)childGame).changeScreen(childScreen);
 
-            //Log.d("MainActivity", "Starting new game");
-            //childView = initializeForView(childGame, cfg);
+            Log.d("MainActivity", "Starting new game");
+            childView1 = initializeForView(childGame1, cfg);
 
             //Log.d("MainActivity", "Attaching view to screen layout");
-            //libgdxFrame.addView(childView);
+            splash.pause();
+            libgdxFrame.removeView(splashView);
+            libgdxFrame.addView(childView1);
 
-
-
-            //Not entirely sure if using a handler is still needed
+            //Not entirely sure if using a handler is still needed when we're still on the main thread
 //            myHandler.post(new Runnable()
 //            {
 //                @Override
@@ -125,7 +132,7 @@ public class MainActivity extends AndroidApplication
 //                }
 //            });
 
-            Log.d("MainActivity", "Startup sequence complete!<<<<<<<<<<<<<<<<");
+            Log.d("MainActivity", "Child App 1 Startup sequence complete!<<<<<<<<<<<<<<<<");
         }
         catch(Exception ex)
         {
@@ -140,9 +147,9 @@ public class MainActivity extends AndroidApplication
         try
         {
             Log.d("MainActivity", ">>>>>>>>>>Initializing Class Loader");
-            String className = "net.obviam.starassault.screens.GameScreen";
+            String className = "net.obviam.starassault.StarAssault";
             String namespace = "net.obviam.starassault";
-            String packageFullPath = "sdcard/Download/starAssault.apk";
+            String packageFullPath = "sdcard/Download/starAssaultWithAssets.apk";
             Context currentContext = getApplicationContext();
             ClassLoader cl = currentContext.getClassLoader();
 
@@ -159,42 +166,18 @@ public class MainActivity extends AndroidApplication
 
             Log.d("MainActivity", "Instantiating child Game from dynamically loaded class.");
 
-            //Game childGame2 = (Game) loadedClass.getConstructor().newInstance();
-            Screen childScreen2 = (Screen) loadedClass.getConstructor().newInstance();
+            Game childGame2 = (Game) loadedClass.getConstructor().newInstance();
+            //Screen childScreen2 = (Screen) loadedClass.getConstructor().newInstance();
 
             Log.d("MainActivity", "Starting new game");
-            //childView = initializeForView(childGame2, cfg);
+            childView2 = initializeForView(childGame2, cfg);
 
             Log.d("MainActivity", "Attaching view to screen layout");
-            //libgdxFrame.addView(childView);
+            childGame1.pause();
+            libgdxFrame.removeView(childView1);
+            libgdxFrame.addView(childView2);
 
-            ((DemoGame)childGame).changeScreen(childScreen2);
-
-
-
-            //Not entirely sure if using a handler is still needed
-//            myHandler.post(new Runnable()
-//            {
-//                @Override
-//                public void run()
-//                {
-//                    try
-//                    {
-//                        Log.d("MainActivity", "Initializing child view");
-//
-//                        childView = initializeForView(childGame, cfg);
-//
-//                        Log.d("MainActivity", "Attaching view to screen layout");
-//
-//                        libgdxFrame.removeView(childView);
-//                        libgdxFrame.addView(childView);
-//                    }
-//                    catch (Exception e)
-//                    {
-//                        Log.e("MainActivity", e.toString());
-//                    }
-//                }
-//            });
+            //((DemoGame)childGame).changeScreen(childScreen2);
 
             Log.d("MainActivity", "Startup sequence complete!<<<<<<<<<<<<<<<<");
         }
