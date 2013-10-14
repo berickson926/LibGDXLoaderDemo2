@@ -3,7 +3,8 @@
 #################
 
 *.out/
-out/*
+.out/*
+.out\*
 
 *.pydevproject
 .project
