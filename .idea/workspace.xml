@@ -51,6 +51,8 @@
     <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381779620323" ignored="false" />
     <file path="$PROJECT_DIR$/../../LibGDX/star-assault-part4/star-assault/src/net/obviam/starassault/model/Level.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381784895959" ignored="false" />
     <file path="/Level.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381784873311" ignored="false" />
+    <file path="$PROJECT_DIR$/../../LibGDX/star-assault-part4/star-assault/src/net/obviam/starassault/view/WorldRenderer.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381799434928" ignored="false" />
+    <file path="/WorldRenderer.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381799402082" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +117,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/src/com/me/LibGDXLoaderDemo2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="128" selection-start="4267" selection-end="4267" vertical-scroll-proportion="0.5604964">
+            <state line="142" column="0" selection-start="6121" selection-end="6121" vertical-scroll-proportion="0.8918919">
               <folding />
             </state>
           </provider>
@@ -266,6 +268,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -281,7 +287,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,7 +348,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Enplug/Player" />
     <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.0.91:5555" />
@@ -353,6 +363,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\assets" />
       <recent name="C:\Users\enplug\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\assets" />
       <recent name="C:\Users\enplug\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\libs" />
       <recent name="C:\Users\enplug\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\res" />
@@ -522,7 +533,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.7534381" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1956242" sideWeight="0.7534381" order="2" side_tool="false" content_ui="tabs" />
@@ -545,8 +556,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13577864" sideWeight="0.7534381" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24656188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13577864" sideWeight="0.7534381" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24656188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -740,7 +751,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/src/com/me/LibGDXLoaderDemo2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="128" selection-start="4267" selection-end="4267" vertical-scroll-proportion="0.5604964">
+        <state line="142" column="0" selection-start="6121" selection-end="6121" vertical-scroll-proportion="0.8918919">
           <folding />
         </state>
       </provider>
