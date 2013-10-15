@@ -6,12 +6,16 @@
 
     <FrameLayout
             android:layout_width="fill_parent"
-            android:layout_height="600dp"
+            android:layout_height="640dp"
             android:id="@+id/libgdxFrame">
     </FrameLayout>
-    <ImageView
+    <FrameLayout
             android:layout_width="fill_parent"
-            android:layout_height="300dp"
-            android:id="@+id/adslotView" android:src="@drawable/enplug_default3"/>
+            android:layout_height="300dp">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/adslotView" android:src="@drawable/enplug_default3"/>
+    </FrameLayout>
 </LinearLayout>
 

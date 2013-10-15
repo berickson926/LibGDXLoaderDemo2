@@ -7,6 +7,10 @@ out/**
 ## Eclipse
 #################
 
+*.out/
+.out/*
+.out\*
+
 *.pydevproject
 .project
 .metadata

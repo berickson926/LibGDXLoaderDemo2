@@ -25,21 +25,20 @@ import java.util.TimerTask;
 
 public class MainActivity extends AndroidApplication
 {
-    private AndroidApplicationConfiguration cfg;
-    private final Handler myHandler = new Handler();//Used for running initialize() on the main thread
-
-    //Used with reflection to grab class objects from a child app
-    private Class<?> loadedClass;
-    private Context childAppCtx;
+    //Used for running initialize() on the main thread
+    private final Handler myHandler = new Handler();
 
     //Used to initialize views and objects after reflection
+    private AndroidApplicationConfiguration cfg;
     private View childView1, childView2, splashView;
     private ApplicationListener childGame1, childGame2, splash;
     private Screen childScreen;
     private FrameLayout libgdxFrame;
+    private Class<?> loadedClass;
+    private Context childAppCtx;
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
+    public void onCreate(final Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
@@ -49,15 +48,15 @@ public class MainActivity extends AndroidApplication
 
         startSplashScreen();
 
-        Log.d("MainActivity", "Downloading Child apk");
+        //Log.d("MainActivity", "Downloading Child apk");
         //downloadUpdate("EnplugPlayer.apk", "http://enplug.com/packages/player/40/EnplugPlayer.apk");
         //downloadUpdate("star-assault-android.apk", "http://dl.dropboxusercontent.com/sh/xt7xpa15401ru11/BHawa9XIMC/star-assault-android.apk?token_hash=AAGgjL8F9eDn9LhCbMPBOBeztZeRo-4Un923YFoLrUcEyA&dl=1");
         //downloadUpdate("starAssault.apk", "http://dl-web.dropbox.com/get/personalProjects/starAssault.apk?w=AADGmZDev2JNaI2ZIj9-QqQD-erlT8QYlMha2Cw5q3lUig&dl=1");
 
         Log.d("MainActivity", "Starting first Child app");
-        startChildApp();
+        //startChildApp();
 
-        Log.d("MainActivity", "Start second child app");
+        Log.d("MainActivity", "Starting second child app");
         startSecondChildApp();
     }
 
@@ -78,7 +77,6 @@ public class MainActivity extends AndroidApplication
         {
             Log.d("MainActivity", ">>>>>>>>>>Initializing Class Loader");
             String className = "net.obviam.starassault.StarAssault";
-            String namespace = "net.obviam.starassault";
             String packageFullPath = "sdcard/Download/starAssault.apk";
             Context currentContext = getApplicationContext();
             ClassLoader cl = currentContext.getClassLoader();
@@ -95,42 +93,18 @@ public class MainActivity extends AndroidApplication
             Log.d("MainActivity", "Loaded Super Class is: "+loadedClass.getConstructor().newInstance().getClass().getSuperclass().toString());
 
             Log.d("MainActivity", "Instantiating child Game from dynamically loaded class.");
-            childGame1 = (Game) loadedClass.getConstructor().newInstance();
-
-            //Log.d("MainActivity", "Starting new screen");
-            //((DemoGame)childGame).changeScreen(childScreen);
+            childGame1 = (ApplicationListener) loadedClass.getConstructor().newInstance();
 
             Log.d("MainActivity", "Starting new game");
             childView1 = initializeForView(childGame1, cfg);
 
-            //Log.d("MainActivity", "Attaching view to screen layout");
+            /*
+                Careful! this is all very concrete and trying to remove/pause things that don't exist will result in exceptions.
+             */
+            Log.d("MainActivity", "Attaching view to screen layout");
             splash.pause();
             libgdxFrame.removeView(splashView);
             libgdxFrame.addView(childView1);
-
-            //Not entirely sure if using a handler is still needed when we're still on the main thread
-//            myHandler.post(new Runnable()
-//            {
-//                @Override
-//                public void run()
-//                {
-//                    try
-//                    {
-//                        Log.d("MainActivity", "Initializing child view");
-//
-//                        childView = initializeForView(childGame, cfg);
-//
-//                        Log.d("MainActivity", "Attaching view to screen layout");
-//
-//                        libgdxFrame.removeView(childView);
-//                        libgdxFrame.addView(childView);
-//                    }
-//                    catch (Exception e)
-//                    {
-//                        Log.e("MainActivity", e.toString());
-//                    }
-//                }
-//            });
 
             Log.d("MainActivity", "Child App 1 Startup sequence complete!<<<<<<<<<<<<<<<<");
         }
@@ -147,15 +121,14 @@ public class MainActivity extends AndroidApplication
         try
         {
             Log.d("MainActivity", ">>>>>>>>>>Initializing Class Loader");
-            String className = "net.obviam.starassault.StarAssault";
-            String namespace = "net.obviam.starassault";
-            String packageFullPath = "sdcard/Download/starAssaultWithAssets.apk";
-            Context currentContext = getApplicationContext();
-            ClassLoader cl = currentContext.getClassLoader();
+            final String className = "net.obviam.starassault.StarAssault";
+            final String packageFullPath = "mnt/sdcard/Download/star-assault-android.apk";
+            final Context currentContext = getApplicationContext();
+            final ClassLoader cl = currentContext.getClassLoader();
 
             Log.d("MainActivity", "Using Dex Class Loader");
-            File dexOutputDir = currentContext.getDir("dex", 0);
-            DexClassLoader dexLoader = new DexClassLoader(packageFullPath, dexOutputDir.getAbsolutePath(), null, cl);
+            final File dexOutputDir = currentContext.getDir("dex", 0);
+            final DexClassLoader dexLoader = new DexClassLoader(packageFullPath, dexOutputDir.getAbsolutePath(), null, cl);
 
             Log.d("MainActivity", "Using class loader to find entrypoint of libgdx app.");
             loadedClass = Class.forName(className, true, dexLoader);
@@ -166,20 +139,23 @@ public class MainActivity extends AndroidApplication
 
             Log.d("MainActivity", "Instantiating child Game from dynamically loaded class.");
 
-            Game childGame2 = (Game) loadedClass.getConstructor().newInstance();
-            //Screen childScreen2 = (Screen) loadedClass.getConstructor().newInstance();
+            childGame2 = (ApplicationListener) loadedClass.getConstructor().newInstance();
 
             Log.d("MainActivity", "Starting new game");
             childView2 = initializeForView(childGame2, cfg);
 
+            /*
+                Careful! this is all very concrete and trying to remove/pause things that don't exist will result in exceptions.
+             */
             Log.d("MainActivity", "Attaching view to screen layout");
-            childGame1.pause();
-            libgdxFrame.removeView(childView1);
+            splash.pause();
+            libgdxFrame.removeView(splashView);
+            //If we are using the 1st child app we need to remove that instead of the splash screen
+            //childGame1.pause();
+            //libgdxFrame.removeView(childView1);
             libgdxFrame.addView(childView2);
 
-            //((DemoGame)childGame).changeScreen(childScreen2);
-
-            Log.d("MainActivity", "Startup sequence complete!<<<<<<<<<<<<<<<<");
+            Log.d("MainActivity", "Child App 2 Startup sequence complete!<<<<<<<<<<<<<<<<");
         }
         catch(Exception ex)
         {
@@ -191,11 +167,11 @@ public class MainActivity extends AndroidApplication
     //Utility Methods borrowed from EnpugUtilities.jar (thanks Justin!) to download and install a child apk from a remote location.
     private void installUpdate(final String filename)
     {
-        Utilities.logI("MainActivity", "Status - Starting install for: " + filename + ".");
-        Command command = new Command(0, "pm install -r /sdcard/Download/"+filename)
+        Utilities.logI("MainActivity", "Status - Starting install for: " + filename + '.');
+        final Command command = new Command(0, "pm install -r /sdcard/Download/"+filename)
         {
             @Override
-            public void output(int id, String line)
+            public void output(final int id, final String line)
             {
                 if(line.toLowerCase().contains("success"))
                 {
@@ -207,7 +183,7 @@ public class MainActivity extends AndroidApplication
         {
             RootTools.getShell(true).add(command).waitForFinish();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
@@ -217,10 +193,10 @@ public class MainActivity extends AndroidApplication
     {
         Utilities.logI("MainActivity", "Starting download of: " + filename + " from " + url);
 
-        Command command = new Command(0, "wget -O /sdcard/Download/"+filename + " " + url)
+        final Command command = new Command(0, "wget -O /sdcard/Download/"+filename + ' ' + url)
         {
             @Override
-            public void output(int id, String line)
+            public void output(final int id, final String line)
             {
                 if(line.contains("100% |*******************************|"))
                 {
@@ -233,7 +209,7 @@ public class MainActivity extends AndroidApplication
         {
             RootTools.getShell(true).add(command).waitForFinish();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
