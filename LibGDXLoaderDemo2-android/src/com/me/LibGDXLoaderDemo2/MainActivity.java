@@ -4,13 +4,10 @@ import android.content.Context;
 import android.os.Bundle;
 
 import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.Game;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
@@ -20,8 +17,6 @@ import com.stericson.RootTools.execution.Command;
 import dalvik.system.DexClassLoader;
 
 import java.io.File;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends AndroidApplication
 {
