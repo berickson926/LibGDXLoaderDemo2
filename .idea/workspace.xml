@@ -3,56 +3,30 @@
   <component name="AndroidDesignerProfile">
     <option name="fullProfile">
       <profile>
-        <option name="device" value="Nexus 7" />
+        <option name="device" value="2.7in QVGA" />
         <option name="deviceConfiguration" value="Portrait" />
         <option name="targetHashString" value="android-18" />
-        <option name="theme" value="Theme" />
+        <option name="theme" value="Theme.NoTitleBar.Fullscreen" />
       </profile>
     </option>
     <option name="selection" value="[Full]" />
   </component>
-  <component name="AndroidLayoutPreviewToolWindow">
-    <option name="state">
-      <GlobalState>
-        <option name="device" value="2.7in QVGA" />
-        <option name="dockMode" value="" />
-        <option name="nightMode" value="notnight" />
-        <option name="targetHashString" value="android-18" />
-        <option name="theme" value="Theme" />
-        <option name="visible" value="false" />
-      </GlobalState>
-    </option>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" name="Default" comment="" />
+    <list default="true" id="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" name="Default" comment="" />
     <ignored path="LibGDXLoaderDemo2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/../LibGDXLoaderDemo/.idea/workspace.xml" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381463353143" ignored="false" />
-    <file path="/fragment.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381784102451" ignored="false" />
-    <file path="/MainActivity.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381786520317" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381463479221" ignored="false" />
-    <file path="$PROJECT_DIR$/../StarGuard/star-assault-android/src/net/obviam/starassault/MainActivity.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381464278828" ignored="false" />
-    <file path="$PROJECT_DIR$/../StarGuard/star-assault/src/net/obviam/starassault/view/WorldRenderer.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381464278828" ignored="false" />
-    <file path="$PROJECT_DIR$/../StarGuard/star-assault/src/net/obviam/starassault/model/Player.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381464278828" ignored="false" />
-    <file path="$PROJECT_DIR$/../StarGuard/star-assault/src/net/obviam/starassault/model/World.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381464278828" ignored="false" />
-    <file path="$PROJECT_DIR$/../StarGuard/star-assault/src/net/obviam/starassault/view/StarAssaultAlternate.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381464278828" ignored="false" />
-    <file path="$PROJECT_DIR$/../StarGuard/star-assault/src/net/obviam/starassault/model/Block.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381464278828" ignored="false" />
-    <file path="$PROJECT_DIR$/../StarGuard/star-assault/src/net/obviam/starassault/screens/GameScreen.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381472996542" ignored="false" />
-    <file path="$PROJECT_DIR$/../StarGuard/star-assault/src/net/obviam/starassault/StarAssault.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381464278828" ignored="false" />
-    <file path="$PROJECT_DIR$/../StarGuard/star-assault-desktop/src/net/obviam/starassault/Main.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381464278828" ignored="false" />
-    <file path="$PROJECT_DIR$/../Player/Android/src/com/enplug/player/MainActivity.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381541271345" ignored="false" />
-    <file path="$PROJECT_DIR$/../Player/Android/src/com/enplug/player/service/SocialService.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381544819501" ignored="false" />
-    <file path="/SocialService.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381544819501" ignored="false" />
-    <file path="$PROJECT_DIR$/../Player/Android/gen/com/enplug/player/BuildConfig.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381560632817" ignored="false" />
-    <file path="$PROJECT_DIR$/../../LibGDX/star-assault-part3/star-assault/src/net/obviam/starassault/StarAssault.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381562885776" ignored="false" />
-    <file path="/StarAssault.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381562871332" ignored="false" />
-    <file path="/DemoGame.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381568143185" ignored="false" />
-    <file path="/DemoScreen.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381564210420" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381779620323" ignored="false" />
-    <file path="$PROJECT_DIR$/../../LibGDX/star-assault-part4/star-assault/src/net/obviam/starassault/model/Level.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381784895959" ignored="false" />
-    <file path="/Level.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381784873311" ignored="false" />
-    <file path="$PROJECT_DIR$/../../LibGDX/star-assault-part4/star-assault/src/net/obviam/starassault/view/WorldRenderer.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381799434928" ignored="false" />
-    <file path="/WorldRenderer.java" changelist="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" time="1381799402082" ignored="false" />
+    <file path="/fragment.java" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383716537999" ignored="false" />
+    <file path="/Main.java" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383695934560" ignored="false" />
+    <file path="/MainActivity.java" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383714943592" ignored="false" />
+    <file path="/*.regexp" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383702631630" ignored="false" />
+    <file path="$PROJECT_DIR$/../PhotoWall/Android/src/com/enplug/photowall/MainActivity.java" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383704552437" ignored="false" />
+    <file path="$PROJECT_DIR$/../PhotoWall/Main/src/com/enplug/photowall/view/PhotoWallRenderer.java" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383717626655" ignored="false" />
+    <file path="/PhotoWallRenderer.java" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383717620010" ignored="false" />
+    <file path="$PROJECT_DIR$/../PhotoWall/Main/src/com/enplug/photowall/controller/screens/PhotoWallScreen.java" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383714554403" ignored="false" />
+    <file path="/PhotoWallScreen.java" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383714168913" ignored="false" />
+    <file path="/strings.xml" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383716672189" ignored="false" />
+    <file path="$PROJECT_DIR$/../PhotoWall/Android/res/values/strings.xml" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383716672189" ignored="false" />
+    <file path="$PROJECT_DIR$/../PhotoWall/Main/src/com/enplug/photowall/model/World.java" changelist="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" time="1383718054663" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +57,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -100,11 +74,10 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -117,38 +90,17 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/src/com/me/LibGDXLoaderDemo2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="0" selection-start="6121" selection-end="6121" vertical-scroll-proportion="0.8918919">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="66" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/res/layout/main.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DemoGame.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2/src/com/me/LibGDXLoaderDemo2/DemoGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="8" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="240" column="14" selection-start="9645" selection-end="9645" vertical-scroll-proportion="0.6788194">
+              <folding>
+                <element signature="e#2283#2726#0" expanded="true" />
+                <element signature="e#2707#2708#0" expanded="true" />
+                <element signature="e#3922#4097#0" expanded="true" />
+                <element signature="e#4082#4083#0" expanded="true" />
+                <element signature="e#4397#4606#0" expanded="true" />
+                <element signature="e#4587#4588#0" expanded="true" />
+                <element signature="method#installUpdate#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#downloadUpdate#0;class#MainActivity#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,10 +115,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/LibGDXLoaderDemo2/src/com/me/LibGDXLoaderDemo2/DemoScreen.java" />
-        <option value="$PROJECT_DIR$/LibGDXLoaderDemo2/src/com/me/LibGDXLoaderDemo2/DemoGame.java" />
-        <option value="$PROJECT_DIR$/LibGDXLoaderDemo2-android/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/LibGDXLoaderDemo2-android/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/LibGDXLoaderDemo2-desktop/src/com/me/LibGDXLoaderDemo2/Main.java" />
         <option value="$PROJECT_DIR$/LibGDXLoaderDemo2-android/src/com/me/LibGDXLoaderDemo2/MainActivity.java" />
       </list>
     </option>
@@ -174,8 +123,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="1176" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -203,7 +152,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -251,123 +199,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="textures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibGDXLoaderDemo2" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Enplug/Player" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LibGDXLoaderDemo2-android/assets" />
     <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.0.91:5555" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.0.10:5555" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="enplugPlayer" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="EnplugEmulator" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\assets" />
-      <recent name="C:\Users\enplug\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\assets" />
-      <recent name="C:\Users\enplug\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\libs" />
-      <recent name="C:\Users\enplug\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\res" />
-      <recent name="C:\Users\enplug\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\res\layout" />
+      <recent name="C:\Users\enplug\Documents\GitHub\LibGDXLoaderDemo2\LibGDXLoaderDemo2-android\assets\data" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.LibGDXLoaderDemo2-android">
@@ -375,24 +241,6 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -514,8 +362,26 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="Desktop" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.me.LibGDXLoaderDemo2.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/assets" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LibGDXLoaderDemo2-desktop" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Android Application.LibGDXLoaderDemo2-android" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Desktop" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -525,52 +391,41 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4d8526b0-33cc-4b8c-acd9-899a84c0d83e" name="Default" comment="" />
-      <created>1381387806481</created>
-      <updated>1381387806481</updated>
+      <changelist id="e2169ba3-e69b-4c23-bcb6-ecfca5ea6ec4" name="Default" comment="" />
+      <created>1383678688465</created>
+      <updated>1383678688465</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.7534381" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1956242" sideWeight="0.7534381" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6703786" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6703786" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24721603" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13607258" sideWeight="0.75278395" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24721603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.75278395" order="3" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13577864" sideWeight="0.7534381" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24656188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
->>>>>>> 0a07499602c05b0cfa7d1d22e0343249afeda424
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13287087" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6703786" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -631,134 +486,75 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/AndroidManifest.xml">
+    <entry file="jar://$PROJECT_DIR$/LibGDXLoaderDemo2/libs/gdx.jar!/com/badlogic/gdx/Game.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
+        <state line="21" column="16" selection-start="598" selection-end="598" vertical-scroll-proportion="0.6170599">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/LibGDXLoaderDemo2/libs/gdx.jar!/com/badlogic/gdx/files/FileHandle.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="0" selection-start="4597" selection-end="4597" vertical-scroll-proportion="0.8602541">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/res/layout/main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2/src/com/me/LibGDXLoaderDemo2/DemoGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/src/com/me/LibGDXLoaderDemo2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="59" selection-start="7121" selection-end="7121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="47" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/res/layout/main.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2/src/com/me/LibGDXLoaderDemo2/DemoGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/src/com/me/LibGDXLoaderDemo2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="14" selection-start="6715" selection-end="6715" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="47" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/res/layout/main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2/src/com/me/LibGDXLoaderDemo2/DemoGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="12" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2/src/com/me/LibGDXLoaderDemo2/DemoGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="8" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-desktop/src/com/me/LibGDXLoaderDemo2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="38" selection-start="73" selection-end="73" vertical-scroll-proportion="0.047486033">
+        <state line="13" column="34" selection-start="427" selection-end="427" vertical-scroll-proportion="0.35416666">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2/src/com/me/LibGDXLoaderDemo2/DemoGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="66" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
+        <state line="16" column="36" selection-start="372" selection-end="372" vertical-scroll-proportion="0.35069445">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/res/layout/main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+    <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2/src/com/me/LibGDXLoaderDemo2/DemoScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="280" selection-end="280" vertical-scroll-proportion="0.11805555">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LibGDXLoaderDemo2-android/src/com/me/LibGDXLoaderDemo2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="0" selection-start="6121" selection-end="6121" vertical-scroll-proportion="0.8918919">
-          <folding />
+        <state line="240" column="14" selection-start="9645" selection-end="9645" vertical-scroll-proportion="0.6788194">
+          <folding>
+            <element signature="e#2283#2726#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
+            <element signature="e#3922#4097#0" expanded="true" />
+            <element signature="e#4082#4083#0" expanded="true" />
+            <element signature="e#4397#4606#0" expanded="true" />
+            <element signature="e#4587#4588#0" expanded="true" />
+            <element signature="method#installUpdate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#downloadUpdate#0;class#MainActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -802,7 +598,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -814,7 +610,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>LibGDXLoaderDemo2</last-edited>
+          <last-edited>LibGDXLoaderDemo2-android</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -826,7 +622,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>Android 4.3 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

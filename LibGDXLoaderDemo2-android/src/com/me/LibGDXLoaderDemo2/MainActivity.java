@@ -17,11 +17,20 @@ import com.stericson.RootTools.execution.Command;
 import dalvik.system.DexClassLoader;
 
 import java.io.File;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AndroidApplication
 {
     //Used for running initialize() on the main thread
     private final Handler myHandler = new Handler();
+    private static final long RUNTIME_PERIOD = 10;
+    private static final long INITIAL_DELAY = 2;
+    private ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
+    private boolean appFlag = true; //debugging mechanism for knowing which app to start/stop. CAREFUL - demo is hardcoded and requires this flag to be true at startup otherwise it will crash
+    private boolean splashActive = false;
+
 
     //Used to initialize views and objects after reflection
     private AndroidApplicationConfiguration cfg;
@@ -39,20 +48,85 @@ public class MainActivity extends AndroidApplication
         setContentView(R.layout.main);
 
         cfg = new AndroidApplicationConfiguration();
-        cfg.useGL20 = false;
+        cfg.useGL20 = true;
 
+        //Use splash screen for basic setup requirements
         startSplashScreen();
+
+        //Start the thread scheduler to swap between apps afterwards on a fixed time interval
+        Log.d("MainActivity", "======================================================================");
+        scheduler.scheduleAtFixedRate(
+                new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        Log.d("MainActivity", "Running application swap task!");
+
+                        //we will assume that the Calc/calendar apps have been validated after the app launcher surveys all installed apps on the device
+                        launchApplications();
+                    }
+                }, INITIAL_DELAY, RUNTIME_PERIOD, TimeUnit.SECONDS);
+
+        //------------------------------------------------------------------
 
         //Log.d("MainActivity", "Downloading Child apk");
         //downloadUpdate("EnplugPlayer.apk", "http://enplug.com/packages/player/40/EnplugPlayer.apk");
         //downloadUpdate("star-assault-android.apk", "http://dl.dropboxusercontent.com/sh/xt7xpa15401ru11/BHawa9XIMC/star-assault-android.apk?token_hash=AAGgjL8F9eDn9LhCbMPBOBeztZeRo-4Un923YFoLrUcEyA&dl=1");
         //downloadUpdate("starAssault.apk", "http://dl-web.dropbox.com/get/personalProjects/starAssault.apk?w=AADGmZDev2JNaI2ZIj9-QqQD-erlT8QYlMha2Cw5q3lUig&dl=1");
 
-        Log.d("MainActivity", "Starting first Child app");
-        //startChildApp();
+//        Log.d("MainActivity", "Starting first Child app");
+//        startChildApp();
+//
+//        Log.d("MainActivity", "Starting second child app");
+//        startSecondChildApp();
 
-        Log.d("MainActivity", "Starting second child app");
-        startSecondChildApp();
+
+    }
+
+    private void launchApplications()
+    {
+        //Start the next app in the rotation
+        if(appFlag)
+        {
+            Log.d("MainActivity", "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            Log.d("MainActivity", "Starting PhotoTile App!");
+
+            appFlag = false;
+
+            myHandler.post(new Runnable()
+            {
+                @Override
+                public void run()
+                {
+                    startChildApp();
+                }
+            });
+        }
+        else
+        {
+            Log.d("MainActivity", "-----------------------------------------------------------------");
+            Log.d("MainActivity", "Starting sample StarGuard app!");
+
+            appFlag = true;
+
+            try
+            {
+                myHandler.post(new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        startSecondChildApp();
+                    }
+                });
+
+            }
+            catch(Exception e)
+            {
+                Log.e("MainActivity", "Failed to stop webgl demo! "+e);
+            }
+        }
     }
 
     public void startSplashScreen()
@@ -62,6 +136,8 @@ public class MainActivity extends AndroidApplication
         splash = new DemoGame();
         splashView = initializeForView(splash, cfg);
         libgdxFrame.addView(splashView);
+
+        splashActive = true;
     }
 
     //we call this method only after the child app has been downloaded/installed
@@ -71,8 +147,8 @@ public class MainActivity extends AndroidApplication
         try
         {
             Log.d("MainActivity", ">>>>>>>>>>Initializing Class Loader");
-            String className = "net.obviam.starassault.StarAssault";
-            String packageFullPath = "sdcard/Download/starAssault.apk";
+            String className = "com.enplug.photowall.PhotoWall";
+            String packageFullPath = "mnt/sdcard/Download/PhotoWall.apk";
             Context currentContext = getApplicationContext();
             ClassLoader cl = currentContext.getClassLoader();
 
@@ -97,8 +173,22 @@ public class MainActivity extends AndroidApplication
                 Careful! this is all very concrete and trying to remove/pause things that don't exist will result in exceptions.
              */
             Log.d("MainActivity", "Attaching view to screen layout");
-            splash.pause();
-            libgdxFrame.removeView(splashView);
+            if(splashActive)
+            {
+                Log.d("MainActivity", "Disabling Splash screen instead of other app");
+                //splash.pause();
+                splash.dispose();
+                libgdxFrame.removeView(splashView);
+
+                splashActive = false;
+            }
+            else
+            {
+                //childGame2.pause();
+                childGame2.dispose();
+                libgdxFrame.removeView(childView2);
+            }
+
             libgdxFrame.addView(childView1);
 
             Log.d("MainActivity", "Child App 1 Startup sequence complete!<<<<<<<<<<<<<<<<");
@@ -142,12 +232,15 @@ public class MainActivity extends AndroidApplication
             /*
                 Careful! this is all very concrete and trying to remove/pause things that don't exist will result in exceptions.
              */
-            Log.d("MainActivity", "Attaching view to screen layout");
-            splash.pause();
-            libgdxFrame.removeView(splashView);
+//            Log.d("MainActivity", "Attaching view to screen layout");
+//            splash.pause();
+//            libgdxFrame.removeView(splashView);
+//            libgdxFrame.addView(childView2);
+
             //If we are using the 1st child app we need to remove that instead of the splash screen
             //childGame1.pause();
-            //libgdxFrame.removeView(childView1);
+            childGame1.dispose();
+            libgdxFrame.removeView(childView1);
             libgdxFrame.addView(childView2);
 
             Log.d("MainActivity", "Child App 2 Startup sequence complete!<<<<<<<<<<<<<<<<");
